@@ -1,0 +1,64 @@
+.popular
+    width: 100%
+    padding: 50px 0 86px 0
+    &__title
+        text-align: center
+    &__items
+        margin-top: 52px
+        display: grid
+        grid-template-columns: repeat(auto-fit, 370px)
+        grid-auto-rows: 486px
+        justify-content: space-between
+    &__item
+        cursor: pointer
+        &-name
+            margin: 40px auto 10px 40px
+            font-weight: 700
+            font-size: 14px
+            line-height: 24px
+            letter-spacing: 0.03em
+            color: rgba(27, 26, 23, 0.82)
+        &-price
+            margin-left: 40px
+            font-weight: 400
+            font-size: 12px
+            line-height: 16px
+            color: rgba(27, 26, 23, 0.82)
+        &-img
+            position: relative
+            width: 313px
+            aspect-ratio: 1
+            img
+                filter: drop-shadow(2px 2px 10px rgba(92, 92, 80, 0.23))
+            &::before
+                content: ''
+                position: absolute
+                z-index: -2
+                inset: 0
+                background: linear-gradient(to right, #fff, #e2d0c4)
+                border-radius: 50%
+            &::after
+                content: ''
+                position: absolute
+                width: 311px
+                height: 315px
+                inset: 0
+                top: 1px
+                left: 1px
+                background: #fff
+                border-radius: 100%
+                z-index: -1
+            img
+                width: 100%
+        &-more
+            margin: 19px auto 40px 88px
+            position: relative
+            cursor: pointer
+            &::before
+                content: ''
+                position: absolute
+                width: 30px
+                height: 0px
+                left: -48px
+                top: 50%
+                border: 1px solid #8B8371

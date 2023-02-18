@@ -1,0 +1,36 @@
+.news
+    width: 100%
+    padding: 80px 0
+    &__wrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__text-block
+        width: 471px
+    &__description
+        margin-top: 40px
+        font-weight: 400
+        font-size: 16px
+        line-height: 27px
+        color: #444240
+        span
+            font-family: 'Roboto'
+            font-weight: 700
+    &__social
+        margin-top: 119px
+        &_active
+            display: flex
+        &_hided
+            display: none
+            width: 120px
+    &__img-block
+        display: grid
+        grid-template-columns: 242px, 377px
+        grid-template-rows: repeat(auto-fit, 228px)
+        gap: 10px
+    &__img
+        width: 100%
+        object-fit: cover
+        &_big
+            grid-column: 2
+            grid-row: 1/3

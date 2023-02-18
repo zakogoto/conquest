@@ -1,0 +1,84 @@
+.promo
+    width: 100%
+    height: 768px
+    position: relative
+    overflow: hidden
+    &::before
+        content: ''
+        position: absolute
+        z-index: -1
+        width: 496px
+        height: 945px
+        left: 50%
+        transform: translateX(-43%)
+        top: -90px
+        background: linear-gradient(180deg, rgba(234, 227, 212, 0) 0%, #EAE3D4 100%)
+        border-radius: 100% 0 0 100% / 50% 0 0 50%
+    &__wrap
+        display: grid
+        grid-template-columns: 408px 506px
+        column-gap: 135px
+        justify-content: start
+    &__text-block
+        align-self: center
+        padding-left: 65px
+    &__title
+        font-weight: 400
+        font-size: 45px
+        line-height: 60px
+        color: #1B1A17
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            width: 50px
+            height: 0px
+            left: -65px
+            top: 50%
+            border: 1px solid #8B8371
+    &__subtitle
+        font-weight: 400
+        font-size: 30px
+        line-height: 40px
+        color: #1B1A17
+        margin-bottom: 39px
+    &__description
+        font-weight: 300
+        font-size: 14px
+        line-height: 21px
+        color: rgba(27, 26, 23, 0.82)
+        margin-bottom: 64px
+    &__item
+        position: relative
+        &-price, &-diameter
+            position: absolute
+            font-weight: 400
+            font-size: 16px
+            line-height: 22px
+            color: #1B1A17
+        &-price
+            width: 140px
+            top: 150px
+            left: -72px
+            &::before
+                content: ''
+                position: absolute
+                width: 50px
+                height: 0px
+                right: 0px
+                top: 50%
+                border: 1px solid #8B8371
+        &-diameter
+            width: 187px
+            text-align: right
+            bottom: 143px
+            right: -90px
+            &::before
+                content: ''
+                position: absolute
+                width: 50px
+                height: 0px
+                left: 0px
+                top: 50%
+                border: 1px solid #8B8371
+

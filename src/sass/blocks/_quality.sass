@@ -1,0 +1,97 @@
+.quality
+    width: 100%
+    padding: 52px 0 20px 0
+    overflow: hidden
+    position: relative   
+    &__wrap
+        display: grid
+        grid-template-columns: 520px 376px
+        align-items: center
+        column-gap: 70px
+    &::before
+        content: ''
+        position: absolute
+        width: 365px
+        height: 365px
+        right: -152px
+        top: -149px
+        border: 1px solid rgb(212, 176, 152)
+        border-radius: 100%
+        z-index: -1
+    &::after
+        content: ''
+        position: absolute
+        width: 745px
+        height: 745px
+        right: -533px
+        top: 11px
+        border: 1px solid rgb(212, 176, 152)
+        border-radius: 100%
+        z-index: -1
+    &__img-block
+        position: relative
+        img
+            width: 100%
+        &::before
+            content: ''
+            position: absolute
+            width: 468px
+            height: 519px
+            left: -185px
+            top: -52px
+            background: #F7F5EF
+            z-index: -1
+    &__text-block
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+    &__description
+        font-weight: 400
+        font-size: 16px
+        line-height: 24px
+        color: #444240
+        margin: 38px 0 45px 0
+.slider
+    display: flex
+    margin: 20px 83px 0 0
+    align-items: center
+    justify-content: flex-end
+
+    &__current
+        margin: 0 20px
+        font-weight: 400
+        font-size: 12px
+        line-height: 16px
+    &__prev
+        position: relative
+        width: 5px
+        height: 10px
+        cursor: pointer
+        &::before
+            content: ''
+            position: absolute
+            width: 6px
+            height: 6px
+            top: 2px
+            left: 2px
+            border-left: 1px solid black
+            border-top: 1px solid black
+            transform: rotate(-45deg)
+    &__next
+        position: relative
+        width: 5px
+        height: 10px
+        cursor: pointer
+        &::before
+            content: ''
+            position: absolute
+            width: 6px
+            height: 6px
+            top: 2px
+            right: 2px
+            border-right: 1px solid black
+            border-top: 1px solid black
+            transform: rotate(45deg)
+
+
+    

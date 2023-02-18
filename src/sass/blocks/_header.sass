@@ -1,0 +1,53 @@
+.header
+    width: 100%
+    position: relative
+    display: flex
+    justify-content: space-between
+    height: 85px
+    padding: 30px 100px 26px 97px
+    align-items: center
+    transition: 0.6s all
+    &__logo
+        display: flex
+        align-items: center
+        font-weight: 400
+        font-size: 12px
+        line-height: 16px
+        letter-spacing: 0.14em
+        color: #555248
+        text-transform: uppercase
+    &__icons
+        width: 100px
+        height: 16px
+        display: flex
+        justify-content: space-between
+.menu
+    display: flex
+    width: 422px
+    justify-content: space-between
+    &__item
+        cursor: pointer
+        a
+            color: #555248
+.heart
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        width: 13px
+        height: 13px
+        right: -6px
+        top: 0px
+        background: #E6C8B4
+        border-radius: 100%
+    &::after
+        content: '1'
+        position: absolute
+        font-family: 'Roboto', sans-serif
+        font-weight: 400
+        font-size: 8px
+        line-height: 9px
+        text-align: center
+        color: #1B1A17
+        top: 2px
+        right: -2px

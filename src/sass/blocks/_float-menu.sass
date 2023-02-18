@@ -1,0 +1,102 @@
+.float-menu
+    display: none
+    left: -100%
+    opacity: 0
+    visibility: hidden
+    transition: .6s all
+    z-index: 10
+    &__overlay
+        display: block
+        width: 40vw
+        position: absolute
+        top: 0
+        right: 0
+        background: rgba(82, 77, 69, 0.2)
+        height: 100vh
+        display: block
+        z-index: 1
+    &__block
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        top: 0
+        left: 0
+        height: 100%
+        width: 60%
+        background: #eae3d4
+        position: fixed
+        z-index: 5
+        padding: 30px 40px 30px 40px
+    &__items
+        padding: 20px 0
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: flex-start
+        height: 40%
+    &__item
+        padding: 20px 0
+        width: 100%
+        a
+            color: #555248
+    &__close
+        position: absolute
+        width: 30px
+        height: 30px
+        right: 20px
+        &::before
+            content: ''
+            position: absolute
+            width: 30px
+            height: 2px
+            top: 50%
+            transform: rotate(45deg)
+            background: #555248
+        &::after
+            content: ''
+            position: absolute
+            width: 30px
+            height: 2px
+            top: 50%
+            transform: rotate(-45deg)
+            background: #555248
+    &__contact
+        height: 70px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        a
+            color: #555248
+            text-decoration: underline
+            font-size: 14px
+    &__social
+        margin: 0 auto
+        width: 150px
+.active
+    left: 0
+    visibility: visible
+    opacity: 1
+
+    
+
+.burger
+    display: none
+    flex-direction: column
+    width: 35px
+    background: rgba(0, 0, 0, 0)
+    height: 12px
+    justify-content: space-between
+    align-items: flex-start
+    transition: 0.6s all
+    span, .long
+        display: block
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            width: 30px
+            height: 3px
+            background: #8b8371
+    .long
+        &::before
+            width: 35px
